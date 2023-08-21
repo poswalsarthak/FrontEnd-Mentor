@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #d1e0e0;
+
+}
+
+.qrcontainer{
+    height: 500px;
+    width: 350px;
+    flex-direction: column;
+    border: 10px solid white;
+    background-color: white;
+    border-radius: 5%;
+    overflow: hidden; 
+    /* to make sure content remain inside div */
+}
+.child1{
+    background-image: url("/images/image-qr-code.png");
+    background-size: cover;
+    width: 350px;
+    height: 310px;
+    background-color: aqua;
+    border-radius: 5%;
+}
+
+.child2{
+    width: 350px;
+    height: 190px;
+    border-radius: 5%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        .qrcontainer{
+            height: 400px;
+            width: 250px;
+            flex-direction: column;
+            border: 10px solid white;
+            background-color: white;
+            border-radius: 5%;
+            overflow: hidden; 
+            /* to make sure content remain inside div */
+        }
+        .child1{
+            background-image: url("/images/image-qr-code.png");
+            background-size: cover;
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            border-radius: 5%;
+        }
+        
+        .child2{
+            width: 250px;
+            height: 150px;
+            border-radius: 5%;
+            text-align: center;
+            padding-top: 50px;
+        }
+    }
+  }
